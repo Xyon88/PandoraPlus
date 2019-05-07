@@ -9,7 +9,7 @@ before_install:
 - brew install dpkg ldid
 - git clone --recursive git://github.com/theos/theos.git ~/theos
 script:
-- ls -l /Applications/Xcode.app/
+- ls -l /Applications/Xcode.app/Contents/Developer/Platforms/
 - make clean package
 before_deploy:
 - git config --local user.name "Xyon"
