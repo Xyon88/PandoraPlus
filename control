@@ -1,0 +1,9 @@
+Package: com.xyon.pandoraplus
+Name: Pandora Plus
+Depends: mobilesubstrate
+Version: 0.1.0
+Architecture: iphoneos-arm
+Description: Pandora Plus
+Maintainer: Xyon
+Author: Xyon
+Section: Tweaks
