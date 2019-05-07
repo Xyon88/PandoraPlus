@@ -21,6 +21,6 @@ deploy:
   provider: releases
   api_key:
     secure: UQ3OZ+fEyrlXRFr7FVMCat9kkplDZOlaQMhpzfdJvNC31d66iHlO5rSTsqjqmwiU7WIjsEMCGoM9+jhoGld5kIQIaA4pJrADidTzaNq/zdyelZUZvXOd/UDU0l18luQ6AlyUcV1n6vGRCqGALUmTlL5XxX8dC4VgGCWww9dx0192wlwfJFSG6PrJEBrnE7g8HfFIaDKd/et8Lpv4TC7yt8vnWMwYi6CrnYVWmmwwiolMiWhGtUju2fxWICrXUiKrjAkrXiQpbipFNQcnBKJ/eDoV+YLwTlh8uJUOw89e5FF5S7g5of1/wLwgtOWfHxXZ8MhlxRK8mA8disvgjJf18AEQF0zwHiJ2wEWtjC8hBfyZth9HQ8Qg3SopOwq3z2OAwLuYA0h0hRSYNkGYZMnBO6I+SaqC8TGwv/y/aTPiCVbdDbOHnSX9ZQRrTKin1I6FFfNCJtKbQd/TXWC6P93wnQfDedhZEuI+1J1rcxBv6j0DIsz0qNMFCZ01moPWQSPURfB5NDZmK/hFlWN/KadBunzMDJefo1IPPEqAxl4sGvs+E6397vXAmGRRSc8D7R59Oaw6a+fEslazXIRkDzpeBPNY+c4qlSBIeCiIvnm5WjS41vB/9M85g4ppdKDgnd3VA429DlsqzzbYaOccGnaZehVTq1bU3JTh86a09l4J1qU=
-  file: ''
+  file: '${RELEASE_PKG_FILE}'
   on:
     repo: Xyon88/PandoraPlus
