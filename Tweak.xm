@@ -14,6 +14,7 @@
     }]];
 
     [((UIApplication*)self).keyWindow.rootViewController presentViewController:alertController animated:YES completion:NULL];
+    NSLog(@"Hello There!!!");
 }
 
 %end
