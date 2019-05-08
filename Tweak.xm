@@ -1,20 +1,9 @@
-%hook SpringBoard
+%hook Pandora.PMProfileUpgradePresenter
 
--(void)applicationDidFinishLaunching:(id)application {
-	%orig;
+-(void)presentProfileUpgrade:(id)argument {
+    %orig;
 
-    UIAlertController* alertController = [UIAlertController
-        alertControllerWithTitle:@"Hello There!"
-        message:@"Hello There!"
-        preferredStyle:UIAlertControllerStyleAlert
-    ];
-
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Hello There!" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [((UIApplication*)self).keyWindow.rootViewController dismissViewControllerAnimated:YES completion:NULL];
-    }]];
-
-    [((UIApplication*)self).keyWindow.rootViewController presentViewController:alertController animated:YES completion:NULL];
-    NSLog(@"Hello There!!!");
+    NSLog(@"Pandora.PMProfileUpgradePresenter:presentProfileUpgrade");
 }
 
 %end
