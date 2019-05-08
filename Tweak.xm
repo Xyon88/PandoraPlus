@@ -17,3 +17,13 @@
 }
 
 %end
+
+%hook PMBaseApplicationDelegate
+
+-(void)whyAdsPressed {
+    %orig;
+
+    NSLog(@"Why Ads Pressed");
+}
+
+%end

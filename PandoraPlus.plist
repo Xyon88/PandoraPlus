@@ -1,1 +1,1 @@
-{ Filter = { Executables = ( "Pandora" ); }; }
+{ Filter = { Bundles = ( "com.pandora" ); }; }
