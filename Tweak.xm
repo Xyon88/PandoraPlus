@@ -1,4 +1,4 @@
-%hook Pandora.PMProfileUpgradePresenter
+%hook PMProfileUpgradePresenter
 
 -(void)presentProfileUpgrade:(id)argument {
     %orig;
