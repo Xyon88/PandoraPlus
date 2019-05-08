@@ -7,3 +7,13 @@
 }
 
 %end
+
+%hook PMAdCommandShowUpgrade
+
+-(id)init {
+    %orig;
+
+    NSLog(@"PMAdCommandShowUpgrade:init");
+}
+
+%end
