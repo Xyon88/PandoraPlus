@@ -1,18 +1,9 @@
-%hook PMProfileUpgradePresenter
+%hook AudioManager
 
--(void)presentProfileUpgrade:(id)argument {
+-(void)pauseTTS {
     %orig;
 
-    NSLog(@"Pandora.PMProfileUpgradePresenter:presentProfileUpgrade");
-}
-
-%end
-
-%hook PMAdCommandShowUpgrade
-
--(id)init {
-    NSLog(@"PMAdCommandShowUpgrade:init");
-    return %orig;
+    NSLog(@"AudioManager:pauseTTS");
 }
 
 %end
