@@ -1,1 +1,1 @@
-{ Filter = { Bundles = ( "com.Pandora.app" ); }; }
+{ Filter = { Bundles = ( "com.pandora" ); }; }

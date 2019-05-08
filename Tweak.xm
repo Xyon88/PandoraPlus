@@ -7,3 +7,13 @@
 }
 
 %end
+
+%hook SpringBoard
+
+-(void)applicationDidFinishLaunching:(id)application {
+	%orig;
+
+    NSLog(@"Hello There!!!");
+}
+
+%end
