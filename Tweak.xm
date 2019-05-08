@@ -1440,21 +1440,6 @@
 	NSLog(@"-(bool) isReachable");
 }
 
--(__SCNetworkReachability*) networkReachability {
-	%orig;
-	NSLog(@"-(__SCNetworkReachability*) networkReachability");
-}
-
--(id) initWithReachability:(__SCNetworkReachability*) {
-	%orig;
-	NSLog(@"-(id) initWithReachability:(__SCNetworkReachability*)");
-}
-
--(void) setNetworkReachability:(__SCNetworkReachability*) {
-	%orig;
-	NSLog(@"-(void) setNetworkReachability:(__SCNetworkReachability*)");
-}
-
 -(void) dealloc {
 	%orig;
 	NSLog(@"-(void) dealloc");
@@ -85594,16 +85579,6 @@
 -(id) callbackBlock {
 	%orig;
 	NSLog(@"-(id) callbackBlock");
-}
-
--(__SCNetworkReachability*) reachabilityRef {
-	%orig;
-	NSLog(@"-(__SCNetworkReachability*) reachabilityRef");
-}
-
--(void) setReachabilityRef:(__SCNetworkReachability*) {
-	%orig;
-	NSLog(@"-(void) setReachabilityRef:(__SCNetworkReachability*)");
 }
 
 -(void) dealloc {
@@ -217220,5 +217195,5 @@
 %end
 
 %ctor {
-    NSLog(@"PandoraPlus loaded into memory");
+    %log(@"PandoraPlus loaded");
 }
