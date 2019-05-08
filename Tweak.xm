@@ -217195,5 +217195,5 @@
 %end
 
 %ctor {
-    %log(@"PandoraPlus loaded");
+    NSLog(@"PandoraPlus loaded");
 }
