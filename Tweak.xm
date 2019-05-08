@@ -11,9 +11,8 @@
 %hook PMAdCommandShowUpgrade
 
 -(id)init {
-    %orig;
-
     NSLog(@"PMAdCommandShowUpgrade:init");
+    return %orig;
 }
 
 %end
