@@ -27,3 +27,7 @@
 }
 
 %end
+
+%ctor {
+    NSLog(@"PandoraPlus loaded into memory");
+}
