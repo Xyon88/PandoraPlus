@@ -1,5 +1,3 @@
-%log(@"loaded PandoraPlus");
-
 %hook AudioManager
 
 -(void)pauseTTS {
