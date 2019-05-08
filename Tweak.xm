@@ -3,7 +3,21 @@
 }
 
 %hook PMPlayPauseButton
+
 -(void)updatePlaybackControlsState {
-    %orig;
     NSLog(@"PMPlayPauseButton:updatePlaybackControlsState");
+
+    %orig;
 }
+
+%end
+
+%hook MarqueeLabel
+
+-(bool)isPaused {
+    NSLog(@"MarqueeLabel:isPaused");
+
+    return %orig;
+}
+
+%end
